@@ -1,5 +1,4 @@
 package at.ac.fhcampuswien;
-import javax.sound.midi.SysexMessage;
 import java.util.Scanner;
 
 public class App {
@@ -34,7 +33,7 @@ public class App {
         float d = 80L;
         int e = (int) 44e-1f;
         int f = (int) 5.5f;
-        int g = (int)8.88e1;
+        int g = (int) 8.88e1;
         int h = (int) 99.9;
 
         int sum = (int) (a+b+c+d+e+f+g+h);
@@ -102,10 +101,11 @@ public class App {
         else if (x<=50000){
             System.out.print("Average Sales Revenue");
         }
-        else {
+        else if (x<80000){
             System.out.println("Good Sales Revenue");
         }
-
+        else
+            System.out.println("Excellent Sales Revenue");
     }
 
     //todo Task 8
